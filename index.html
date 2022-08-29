@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/mp3tag.js@latest/dist/mp3tag.min.js"></script>
+    <script src="index.js" defer></script>
+    <title>VLC Upload Music</title>
+  </head>
+  <body>
+    <form>
+      <label for="album">What would you like the album's name to be?</label>
+      <input name="album" type="text" />
+      <br />
+      <label for="file">Upload the file here</label>
+      <input
+        type="file"
+        name="file"
+        id="file"
+        accept="audio/*, video/*"
+        multiple
+      />
+      <button type="submit">Submit</button>
+    </form>
+    <p></p>
+  </body>
+</html>
