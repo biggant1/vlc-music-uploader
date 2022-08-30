@@ -13,12 +13,5 @@ Upload music to your phone and give it an album name for easy sorting.
 
 ### TODO
 
-- [ ] Mercury
-- [x] Venus
-- [x] Earth (Orbit/Moon)
-- [x] Mars
-- [ ] Jupiter
-- [ ] Saturn
-- [ ] Uranus
-- [ ] Neptune
-- [ ] Comet Haley
+- [x] Incorportate youtube-dl
+- [ ] Fix bugs
