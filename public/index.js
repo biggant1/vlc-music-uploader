@@ -1,5 +1,3 @@
-let phoneIP = "192.168.7.43";
-
 let savedAlbum = localStorage.getItem("album");
 if (savedAlbum) {
   document.querySelector("input[type=text]").value = savedAlbum;
