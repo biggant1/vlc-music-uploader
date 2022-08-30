@@ -9,7 +9,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="index.css" />
-    <script src="https://cdn.jsdelivr.net/npm/mp3tag.js@latest/dist/mp3tag.min.js"></script>
     <script src="index.js" defer></script>
     <title>VLC Upload Music</title>
   </head>
@@ -26,6 +25,8 @@
         accept="audio/*, video/*"
         multiple
       />
+      <label for="videos">Put videos here (separated by new lines)</label>
+      <textarea name="videos" id="videos" cols="50" rows="10"></textarea>
       <button type="submit">Submit</button>
     </form>
     <p></p>
