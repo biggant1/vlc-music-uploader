@@ -14,12 +14,16 @@ const fs = require("fs");
 app.use(express.static(__dirname + "/public"));
 
 app.post("/api/upload", multer.array("file"), async (req, res) => {
-  if (req.files.length !== 0) {
-    await withFile(req.files, req.body.album);
-  } else {
-    await withoutFile(req.body.videos, req.body.album);
+  try {
+    if (req.files.length !== 0) {
+      await withFile(req.files, req.body.album);
+    } else {
+      await withoutFile(req.body.videos, req.body.album);
+    }
+    res.send("Success!");
+  } catch (e) {
+    res.status(500).send("Failed!");
   }
-  res.send("Success!");
 });
 
 async function withFile(files, album) {
